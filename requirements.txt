@@ -1,0 +1,7 @@
+pynput
+psutil
+pygetwindow
+numpy
+mss
+PyQt6
+pywin32
