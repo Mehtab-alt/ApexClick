@@ -32,7 +32,7 @@ This decoupled architecture means the system can find and click targets at immen
 | 🎯 **Multi-Position** | Fixed Click Sequences | **Global** (Moves your mouse) | Record & playback automation |
 | ⚡ **Dynamic** | Rapid Clicking | **Global** (Follows your mouse) | Maximum speed at cursor |
 
-### 🤖 Mode 1: Intelligent Mode (The Autonomous Assembly Line)
+### 🤖 Mode 1: Intelligent Mode
 
 The flagship mode. Perfect for automating tasks in games or applications while you use your computer for other things.
 
@@ -42,7 +42,7 @@ The flagship mode. Perfect for automating tasks in games or applications while y
 *   **Precision Control:** Adjust the `MinCheckPixel` distance to avoid clicking clustered targets.
 *   **Hotkeys:** `O` to select your target window, `Backtick` (`)` to start/stop.
 
-### 🎯 Mode 2: Multi-Position Mode (The Programmable Robot Arm)
+### 🎯 Mode 2: Multi-Position Mode
 
 For tasks requiring a fixed sequence of clicks. This mode uses the main system cursor.
 
@@ -51,7 +51,7 @@ For tasks requiring a fixed sequence of clicks. This mode uses the main system c
 *   **Save/Load Profiles:** Save and load your captured positions for different tasks.
 *   **Hotkeys:** `P` to capture a position, `Backtick` (`)` to start/stop.
 
-### ⚡ Mode 3: Dynamic Mode (The Power Tool)
+### ⚡ Mode 3: Dynamic Mode
 
 The simplest mode. Clicks rapidly at your current cursor position.
 
