@@ -4,7 +4,12 @@ import threading
 import time
 import json
 import psutil
-import pygetwindow as gw
+try:
+    import pygetwindow as gw
+    print("Using pygetwindow for Windows")
+except (ImportError, NotImplementedError):
+    print("pygetwindow not available, using Linux compatibility layer")
+    import pygetwindow_linux as gw
 import numpy as np
 import mss
 import queue
@@ -21,7 +26,12 @@ from PyQt6.QtCore import Qt, QThread, pyqtSignal, QTimer, QCoreApplication
 from PyQt6.QtGui import QColor, QPalette
 
 # Optimized input module (requires fast_input.py in the same directory)
-from fast_input import fast_click, fast_move_and_click, fast_background_click
+try:
+    from fast_input import fast_click, fast_move_and_click, fast_background_click
+    print("Using Windows-optimized input module")
+except ImportError:
+    print("Windows modules not available, using Linux compatibility layer")
+    from fast_input_linux import fast_click, fast_move_and_click, fast_background_click
 
 # --- Multiprocessing Worker Function (for "The Brain") ---
 
